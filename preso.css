@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+  list-style-type: square;
+}
+
+.slide {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    font-family: "Roboto";
+    font-weight:300;
+    background: #fff;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    margin: 50px;
+}
+  .slide.center {
+    -webkit-justify-content: center;
+  }
+    .slide.center .content {
+      text-align: center;
+    }
+
+  .marker {
+    font-family: "Marker Felt";
+    font-size:84px;
+  }
+
+  .slide h1 {
+    font-weight:300;
+    font-size: 68px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 68px;
+  }
+
+  .slide .content {
+    font-size: 48px;
+    padding: 100px;
+  }
+
+  .slide li {
+    font-size: 40px;
+  }
+
+  .slide .small li {
+    font-size: 32px;
+  }
+
+.img-rebound {
+  background-image: url(rebound.png);
+  width: 75px;
+  height: 75px;
+  background-size: 75px 75px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min--moz-device-pixel-ratio: 2),
+       (min-resolution: 2dppx),
+       (min-resolution: 192dpi) {
+   .img-rebound {
+     background-image: url(rebound_2x.png);
+   }
+}
